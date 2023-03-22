@@ -1,0 +1,159 @@
+body {
+
+    margin: 0;
+
+}
+
+
+@media (min-width:200px) and (max-width:600px) {
+    header {
+
+        text-align: center;
+        background-color: aquamarine;
+        border: 2px solid black;
+        text-align: center;
+
+
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+
+        padding: 0;
+        justify-content: center;
+
+
+    }
+
+    nav li {
+
+        margin: 0 0.5em;
+
+    }
+
+    nav a {
+
+        text-decoration: none;
+        font-size: medium;
+
+
+    }
+
+    header h1 {
+        font-size: 100;
+        margin-bottom: 0;
+    }
+
+    header p {
+        font-size: larger;
+        font-weight: 200;
+        margin-top: 0;
+    }
+
+
+
+
+
+
+
+    h2 {
+        background-color: rgb(228, 92, 92);
+        margin: 0;
+        padding: 0.3em 0.2em;
+        border-bottom: 2px solid black;
+    }
+
+
+
+}
+
+
+
+@media (min-width:601px) {
+    header {
+
+        text-align: center;
+        background-color: aquamarine;
+        border: 2px solid black;
+        text-align: center;
+
+
+
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+
+        padding: 0;
+        justify-content: center;
+
+
+    }
+
+    nav li {
+
+        margin: 0 1em;
+
+    }
+
+    nav a {
+
+        text-decoration: none;
+
+    }
+
+    header h1 {
+        font-size: 1000;
+        margin-bottom: 0;
+    }
+
+    header p {
+        font-size: large;
+        font-weight: 800;
+        margin-top: 0;
+    }
+
+
+
+
+    h2 {
+        background-color: rgb(228, 92, 92);
+        margin: 0;
+        padding: 0.5em 0.4em;
+        border-bottom: 2px solid black;
+    }
+
+}
+
+.container_for_mcqs {
+    min-width: 340px;
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid purple;
+    margin-top: 3rem;
+    background-color: rgb(228, 203, 201);
+
+}
+
+.container_for_mcqs label {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+.q1 {
+
+    border: 1px solid black;
+    font-size: larger;
+    padding: 0.5em 1em;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+
+
+
+}

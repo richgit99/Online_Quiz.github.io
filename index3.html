@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+
+    <link rel="stylesheet" href="index2.css">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+</head>
+
+<style>
+
+    .container_for_mcqs > div > div > div label{
+        color: rgb(4, 61, 4);font-weight: bolder;
+    }
+    
+    </style>
+    
+
+<body style="background-image: url('code.jpg');">
+
+    <!-- <br> -->
+
+    <div class="result" id="result">
+        <h1 style="margin-top: 0.2em;text-align: center;width: 100%;color: rgb(30, 195, 129);
+        font-weight: bolder;">Result</h1>
+
+        <div style="color: white;">Total number of Questions : 8</div>
+        <div style="color: green;" id="c_ans">Correctly Answered :0 </div>
+        <div style="color: red;" id="ic_ans">Incorrectly Answered : </div>
+        <div style="color: orange;" id="ua_ans">Un-attempted Questions : </div>
+        <br>
+    </div>
+
+
+    <div class="container_for_mcqs" style="background-color: rgb(0, 68, 1,0.75);color: white;
+    border: 8px solid white;">
+        <br>
+        <h1 style="text-align: center;"> Computer Science</h1>
+
+        <div class="q1">
+
+            <label class="label1" for="q1_p"> Q1)Which python
+                library is not used for data scince ______________.</label>
+
+            <div id="first_question_container">
+                <div>
+                    <input type="radio" value="1/2x" name="q1_p" id="option1"> <label for="option1">Pandas</label>
+                </div>
+
+                <div>
+                    <input type="radio" value="1/9xy" name="q1_p" id="option2"> <label for="option2">Numpy</label>
+                </div>
+
+                <div class="real_ans">
+                    <input type="radio" value="Requests" name="q1_p" id="option3"> <label for="option3">Requests</label>
+                </div>
+
+                <div>
+                    <input type="radio" value="1/2" name="q1_p" id="option4"> <label for="option4">Matplotlib</label>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+        <div class="q1">
+
+            <label class="label2" for="q2_p"> Q2)What is the high-level programming language
+                developed by Microsoft known for its use in Windows applications?.</label>
+
+            <div id="second_question_container">
+
+                <div>
+                    <input type="radio" value="circle" name="q2_p" id="option12"> <label for="option12">Java</label>
+                </div>
+
+                <div class="real_ans">
+                    <input type="radio" value="C#" name="q2_p" id="option22"> <label for="option22">C#</label>
+                </div>
+
+                <div>
+                    <input type="radio" value="C" name="q2_p" id="option32"> <label for="option32">C</label>
+                </div>
+
+                <div>
+                    <input type="radio" value="parabola" name="q2_p" id="option42"> <label for="option42">Python</label>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+        <div class="q1">
+
+            <label class="label3" for="q3_p"> Q3) What data structure follows the Last-In-First-Out (LIFO) principle?
+                ______________.</label>
+
+
+            <div id="third_question_container">
+                <div class="real_ans">
+                    <input type="radio" value=" the slope of the tangent " name="q3_p" id="option13"> <label
+                        for="option13">Stack</label>
+                </div>
+
+                <div>
+                    <input type="radio" value="the area under the curve" name="q3_p" id="option23"> <label
+                        for="option23"> Queue</label>
+                </div>
+
+                <div>
+                    <input type="radio" value="rate of change of slope" name="q3_p" id="option33"> <label
+                        for="option33"> Array</label>
+                </div>
+
+                <div>
+                    <input type="radio" value="slope of the line" name="q3_p" id="option43"> <label for="option43">
+                        linked list</label>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+        <div class="q1">
+
+            <label class="label4" for="q4_p"> Q4) Which programming language is known as the
+                "father of all programming languages"?</label>
+
+            <div id="fourth_question_container">
+                <div class="real_ans">
+                    <input type="radio" value="Aryabhatta" name="q4_p" id="option14"> <label
+                        for="option14">Fortran</label>
+                </div>
+                <div>
+
+                    <input type="radio" value="Newton" name="q4_p" id="option24"> <label for="option24">C</label>
+                </div>
+                <div>
+
+                    <input type="radio" value="Guass" name="q4_p" id="option34"> <label for="option34">Small
+                        talk</label>
+                </div>
+                <div>
+
+                    <input type="radio" value="Euler" name="q4_p" id="option44"> <label for="option44"> Ruby </label>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="q1">
+
+            <label class="label5" for="q5_p"> Q5) What programming paradigm emphasizes immutability and functional
+                transformations?
+            </label>
+
+            <div id="fifth_question_container">
+                <div>
+                    <input type="radio" value="closed" name="q5_p" id="option15"> <label for="option15">closed</label>
+                </div>
+
+                <div>
+                    <input type="radio" value="both open and closed" name="q5_p" id="option25"> <label
+                        for="option25">Object Oriented</label>
+                </div>
+
+                <div class="real_ans">
+                    <input type="radio" value="open" name="q5_p" id="option35"> <label for="option35">Functional</label>
+
+                </div>
+                <div>
+                    <input type="radio" value="none of the above" name="q5_p" id="option45"> <label for="option45">none
+                        of
+                        the
+                        above</label>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="q1">
+
+            <label class="label6" for="q6_p"> Q6)  What data structure is a collection of elements with no duplicate values?</label>
+
+            <div id="sixth_question_container">
+                <div>
+
+                    <input type="radio" value="unbounded" name="q6_p" id="option26"> <label
+                        for="option26">Array</label>
+                </div>
+                <div class="real_ans">
+                    <input type="radio" value="differentiable" name="q6_p" id="option16"> <label for="option16"
+                        class="real_ans">Set</label>
+                </div>
+                <div>
+
+                    <input type="radio" value="open" name="q6_p" id="option36"> <label for="option36">Stack</label>
+                </div>
+                <div>
+
+                    <input type="radio" value="none of the above" name="q6_p" id="option46"> <label for="option46">
+                        Linked list</label>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="q1">
+
+            <label class="label7" for="q7_p"> Q7) What is the process of finding and fixing errors in a software program
+                ?</label>
+
+            <div id="seventh_question_container">
+                <div>
+
+                    <input type="radio" value="euclidean distance" name="q7_p" id="option17"> <label
+                        for="option17">Cleaning</label>
+                </div>
+                <div class="real_ans">
+
+                    <input type="radio" value="discrerte" name="q7_p" id="option27"> <label for="option27">
+                        Debugging</label>
+                </div>
+                <div>
+
+                    <input type="radio" value="both of above" name="q7_p" id="option37"> <label for="option37">
+                        Rinsing
+                    </label>
+                </div>
+                <div>
+
+                    <input type="radio" value="none of the above" name="q7_p" id="option47"> <label for="option47">
+                        Re-bugging
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+        <div class="q1">
+
+            <label class="label8" for="q8_p"> Q8) What term describes the process of converting 
+                high-level programming code into machine code?</label>
+
+            <div id="eight_question_container">
+                <div> <input type="radio" value="a = 30" name="q8_p" id="option18"> <label for="option18">
+                    Interpretation</label>
+                </div>
+                <div> <input type="radio" value="a = 120" name="q8_p" id="option28"> <label for="option28">
+                    Optimization
+                </label>
+                </div>
+                <div class="real_ans">
+                    <input type="radio" value="a = 90" name="q8_p" id="option38"> <label for="option38">Compilation</label>
+                </div>
+                <div>
+                    <input type="radio" value="a = 45" name="q8_p" id="option48"> <label for="option48">Debugging</label>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <button class="submit" onclick="action()" id="submit_button">Submit</button>
+
+        <br>
+        <script src="index2.js"></script>
+</body>
+
+</html>

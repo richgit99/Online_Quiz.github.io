@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+
+    <link rel="stylesheet" href="index2.css">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    
+</head>
+
+
+<style>
+
+    .container_for_mcqs > div > div > div label{
+       color:rgb(53, 40, 83,0.95);font-weight: bolder;
+    }
+    
+    </style>
+    
+
+<body style="background-image: url('night_sky.jpg');background-size: cover;background-repeat: no-repeat;
+background-position: center;">
+
+    <!-- <br> -->
+
+    <div class="result" id="result" style="background-color: rgb(53, 40, 83,0.9);border: 5px solid white;">
+        <h1 style="margin-top: 0.2em;text-align: center;width: 100%;color: rgb(30, 195, 129);
+        font-weight: bolder;">Result</h1>
+
+        <div style="color: white;">Total number of Questions : 8</div>
+        <div style="color: green;" id="c_ans">Correctly Answered :0 </div>
+        <div style="color: red;" id="ic_ans">Incorrectly Answered : </div>
+        <div style="color: orange;" id="ua_ans">Un-attempted Questions : </div>
+        <br>
+    </div>
+
+
+    <div class="container_for_mcqs" style="background-color: rgb(53, 40, 83,0.8);color: white;">
+        <br>
+        <h1 style="text-align: center;"> Astronomy </h1>
+
+        <div class="q1">
+
+            <label class="label1" for="q1_p"> Q1): What is the closest star to Earth?</label>
+
+            <div id="first_question_container">
+                <div class="real_ans">
+                    <input type="radio" value="Requests" name="q1_p" id="option3"> <label for="option3">Sun</label>
+                </div>
+                <div>
+                    <input type="radio" value="1/2x" name="q1_p" id="option1"> <label for="option1">Supernova</label>
+                </div>
+
+                <div>
+                    <input type="radio" value="1/9xy" name="q1_p" id="option2"> <label for="option2">Mars</label>
+                </div>
+
+
+                <div>
+                    <input type="radio" value="1/2" name="q1_p" id="option4"> <label for="option4">Moon</label>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+        <div class="q1">
+
+            <label class="label2" for="q2_p"> Q2) Which planet is known as the "Red Planet"?</label>
+
+            <div id="second_question_container">
+
+                <div>
+                    <input type="radio" value="circle" name="q2_p" id="option12"> <label for="option12">Jupiter</label>
+                </div>
+
+                <div class="real_ans">
+                    <input type="radio" value="C#" name="q2_p" id="option22"> <label for="option22">Mars</label>
+                </div>
+
+                <div>
+                    <input type="radio" value="C" name="q2_p" id="option32"> <label for="option32">Neptune</label>
+                </div>
+
+                <div>
+                    <input type="radio" value="parabola" name="q2_p" id="option42"> <label for="option42">saturn</label>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+        <div class="q1">
+
+            <label class="label3" for="q3_p"> Q3) What is the largest moon in our solar system?
+                ______________.</label>
+
+
+            <div id="third_question_container">
+                
+                <div>
+                    <input type="radio" value="the area under the curve" name="q3_p" id="option23"> <label
+                    for="option23"> Lo</label>
+                </div>
+                
+                <div>
+                    <input type="radio" value="rate of change of slope" name="q3_p" id="option33"> <label
+                    for="option33"> Titan</label>
+                </div>
+                
+                <div class="real_ans">
+                    <input type="radio" value=" the slope of the tangent " name="q3_p" id="option13"> <label
+                        for="option13"> Ganymede </label>
+                </div>
+                <div>
+                    <input type="radio" value="slope of the line" name="q3_p" id="option43"> <label for="option43">
+                        Europa </label>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+        <div class="q1">
+
+            <label class="label4" for="q4_p"> Q4) What is the term for a group of stars that
+                 form a recognizable pattern?</label>
+
+            <div id="fourth_question_container">
+                <div>
+
+                    <input type="radio" value="Newton" name="q4_p" id="option24"> <label for="option24">
+                        Starsation
+                    </label>
+                </div>
+                <div class="real_ans">
+                    <input type="radio" value="Aryabhatta" name="q4_p" id="option14"> <label
+                        for="option14">Constellation</label>
+                </div>
+                <div>
+
+                    <input type="radio" value="Guass" name="q4_p" id="option34"> <label for="option34">
+                        Nebula</label>
+                </div>
+                <div>
+
+                    <input type="radio" value="Euler" name="q4_p" id="option44"> <label for="option44"> Cometation </label>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="q1">
+
+            <label class="label5" for="q5_p"> Q5) What is the name of the process by which a star 
+                ends its life in a massive explosion?
+            </label>
+
+            <div id="fifth_question_container">
+                <div>
+                    <input type="radio" value="closed" name="q5_p" id="option15"> <label for="option15">Nebula</label>
+                </div>
+
+                <div>
+                    <input type="radio" value="both open and closed" name="q5_p" id="option25"> <label
+                        for="option25">Black hole</label>
+                </div>
+
+                <div class="real_ans">
+                    <input type="radio" value="open" name="q5_p" id="option35"> <label for="option35">Supernova</label>
+
+                </div>
+                <div>
+                    <input type="radio" value="none of the above" name="q5_p" id="option45"> <label for="option45">
+                       Red Draft</label>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="q1">
+
+            <label class="label6" for="q6_p"> Q6)  What is the largest planet in our solar system?
+                </label>
+
+            <div id="sixth_question_container">
+                <div>
+
+                    <input type="radio" value="unbounded" name="q6_p" id="option26"> <label for="option26">Uranus</label>
+                </div>
+                <div class="real_ans">
+                    <input type="radio" value="differentiable" name="q6_p" id="option16"> <label for="option16"
+                        class="real_ans">Jupiter</label>
+                </div>
+                <div>
+
+                    <input type="radio" value="open" name="q6_p" id="option36"> <label for="option36">Venus</label>
+                </div>
+                <div>
+
+                    <input type="radio" value="none of the above" name="q6_p" id="option46"> <label for="option46">
+                        Earth</label>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="q1">
+
+            <label class="label7" for="q7_p"> Q7)What is the phenomenon where a total solar eclipse
+                 occurs, and the sun's corona is visible?
+                ?</label>
+
+            <div id="seventh_question_container">
+                <div>
+
+                    <input type="radio" value="euclidean distance" name="q7_p" id="option17"> <label
+                        for="option17">Umbra</label>
+                </div>
+                <div class="real_ans">
+
+                    <input type="radio" value="discrerte" name="q7_p" id="option27"> <label for="option27">
+                        Totality</label>
+                </div>
+                <div>
+
+                    <input type="radio" value="both of above" name="q7_p" id="option37"> <label for="option37">
+                        Penumbra
+                    </label>
+                </div>
+                <div>
+
+                    <input type="radio" value="none of the above" name="q7_p" id="option47"> <label for="option47">
+                     Eclipse
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+        <div class="q1">
+
+            <label class="label8" for="q8_p"> Q8)What is the name of the galaxy that contains our solar system?</label>
+
+            <div id="eight_question_container">
+                <div class="real_ans">
+                    <input type="radio" value="a = 90" name="q8_p" id="option38"> <label
+                        for="option38">Milky way</label>
+                </div>
+                <div> <input type="radio" value="a = 30" name="q8_p" id="option18"> <label for="option18">
+                        Andromeda</label>
+                </div>
+                <div> <input type="radio" value="a = 120" name="q8_p" id="option28"> <label for="option28">
+                        Orion
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" value="a = 45" name="q8_p" id="option48"> <label
+                        for="option48">Triangulum</label>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <button class="submit" onclick="action()" id="submit_button">Submit</button>
+
+        <br>
+        <script src="index2.js"></script>
+</body>
+
+</html>

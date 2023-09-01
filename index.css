@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url('pic2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+    /* border: 1px solid red; */
+    margin-top: 0.2em;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 96%;
+    /* border: 2px solid black; */
+    margin: 0 auto;
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    min-height: 600px;
+    justify-content: center;
+    padding: 1em;
+}
+
+.container>div {
+    flex-basis: 300px;
+    border: 5px solid rgb(255, 255, 255);
+    flex-grow: 1;
+    /* min-height: 250px; */
+    max-width: 500px;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    display: flex;
+    max-height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 2px 2px 5px black;
+    overflow: hidden;
+}
+
+.container>div>p {
+    text-align: center;
+    /* color: rgb(255, 255, 255); */
+    color: black;
+    font-size: 3.5rem;
+    font-weight: bold;
+    transition: 200ms ease-in-out;
+    width: fit-content;
+    padding: 0.5em;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.container>div:hover {
+    opacity: 0.9;
+}
+
+@media (max-width:600px) {
+    .container>div>p {
+
+        font-size: 2.5rem;
+
+    }
+}
+
+
+@media (min-width:700px) {
+    .container {
+        width: 90%;
+        gap: 3rem;
+    }
+
+    .container>div {
+        /* width: 90%; */
+        /* gap: 3rem; */
+        flex-basis: 400px;
+    }
+}
